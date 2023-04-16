@@ -1,0 +1,16 @@
+{
+    "tailwind-fold.supportedLanguages": [
+        "html",
+        "typescriptreact",
+        "javascriptreact",
+        "typescript",
+        "javascript",
+        "vue-html",
+        "vue",
+        "php",
+        "markdown",
+        "coffeescript"
+    ],
+    "tailwind-fold.showTailwindImage": true,
+    "tailwind-fold.foldStyle": "QUOTES"
+}
