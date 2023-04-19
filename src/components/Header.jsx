@@ -14,10 +14,10 @@ const Header = () => {
   }
 
   return (
-    <header className="flex justify-between w-full p-7 bg-primaryLight items-center">
+    <header className=" fixed flex justify-between w-full p-7 bg-primaryLight items-center">
       <Logo />
       <Menu height={25} width={25} className="fill-highlight md:hidden" onClick={toggleMobileNav} />
-      <aside className={` ${visibleMobileNav?'':'max-md:hidden'} w-[18rem] bg-primary absolute right-0 top-0 bottom-0 items-center flex flex-col justify-center md:static md:w-max md:bg-inherit`}>
+      <aside className={` ${visibleMobileNav?'':'max-md:hidden'} w-[18rem] bg-primary absolute right-0 top-0 bottom-0 items-center flex flex-col justify-center md:static md:w-max md:bg-inherit max-sm:h-screen`}>
         <Close height={25} width={25} className="fill-highlight absolute right-7 top-9 md:hidden" onClick={toggleMobileNav} />
         <nav className="flex flex-col gap-10 items-center md:flex-row">
           <ol className="nav-item-wrap flex flex-col gap-10 md:flex-row">
