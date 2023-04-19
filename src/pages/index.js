@@ -1,5 +1,7 @@
+import About from "@/components/About";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
+import { Titillium_Web } from 'next/font/google'
 
 const intoData= {
   name: 'Manoj Muduli',
@@ -8,13 +10,16 @@ const intoData= {
   companyLink: 'https://www.contentstack.com'
 }
 
+const myFont = Titillium_Web({ subsets: ['latin'],  weight: '400' })
+
 export default function Home() {
   return (
-    <>
+    <div className={myFont.className}  >
       <Header />
-      <main className="flex">
+      <main className="flex flex-col px-10 md:px-20 lg:px-40 xl:px-80">
         <Intro {...intoData} />
+        <About />
       </main>
-    </>
+    </div>
   );
 }

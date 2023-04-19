@@ -6,13 +6,51 @@
 @layer components{
     .nav-item-wrap{
         counter-reset: nav-item;
-       
     }
     
     .nav-item::before{
         color: var(--color-highlight);
         counter-increment: nav-item;
         content: "0"counter(nav-item)". ";
+    }
+
+    .num-head::before{
+        counter-increment: section 1;
+        content: "0" counter(section) ".";
+        margin-right: 12px;
+    }
+    .num-head::after{
+        content:"";
+        height: 1px;
+        margin-left: 12px;
+        flex: 1;
+        max-width: 300px;
+        background-color: var(--color-highlight);
+    }
+
+    .profile-container::after{
+        content: "";
+        display: block;
+        border: 2px solid red;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+@layer utilities{
+    .text-bold {
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        font-weight: 900;
+    }
+    .text-bold-2 {
+        -webkit-text-stroke: 3px;
+        font-size: 60px;
+        letter-spacing: 3px;
+        font-weight: 900;
     }
 }
 
