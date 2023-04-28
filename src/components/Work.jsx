@@ -10,14 +10,14 @@ const Work = () => {
       <h2 className="num-head text-highlight text-bold text-2xl flex items-center">
         Projects
       </h2>
-      <div className="flex flex-row gap-4 mt-10">
+      <div className="flex flex-col min-[1150px]:flex-row gap-4 mt-10 flex-wrap items-center">
         {projects.map((each) => {
           return (
             <div
-              className="flex flex-col w-96 border-2 p-8 border-highlight rounded-md"
+              className="flex flex-col border-2 p-8 border-highlight rounded-md min-[1150px]:flex-1 max-w-[450px] min-[1150px]:max-w-none"
               key={each}
             >
-              <div className="flex items-center flex-row justify-between w-full">
+              <div className="flex items-center flex-row justify-between">
                 <Project height="60" width="60" className="text-highlight" />
                 <div className="flex flex-row items-center gap-2">
                   <Github height="25" width="25" className="text-highlight" />

@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Close from "@/svg/close";
 import { useEffect, useRef, useState } from "react";
 
-const navItems = ["About", "Expertise", "Project", "Contact"];
+const navItems = ["About", "Project", "Contact"];
 
 const Header = () => {
   const [visibleMobileNav, setVisibleMobileNav] = useState(false);
@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header ref={headerRef} className=" fixed flex justify-between w-full py-6 px-10 lg:px-12 bg-primaryLight items-center transition-all delay-300 z-[1]">
+    <header ref={headerRef} className=" fixed flex justify-between w-full py-6 px-10 lg:px-12 bg-primaryLight items-center transition-all delay-300">
       <Logo />
       <Menu
         height={25}
