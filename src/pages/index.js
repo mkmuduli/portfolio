@@ -1,6 +1,9 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Expertise from "@/components/Expertise";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
+import Work from "@/components/Work";
 import { Titillium_Web } from 'next/font/google'
 
 const intoData= {
@@ -16,9 +19,12 @@ export default function Home() {
   return (
     <div className={myFont.className}  >
       <Header />
-      <main className="flex flex-col px-10 md:px-20 lg:px-40 xl:px-80">
+      <main className="flex flex-col px-10 md:px-20 lg:px-40 xl:px-60 num-head-wrap">
         <Intro {...intoData} />
         <About />
+        <Expertise />
+        <Work />
+        <Contact />
       </main>
     </div>
   );

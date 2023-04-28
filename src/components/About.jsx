@@ -24,20 +24,20 @@ clients.`,
 
 const About = () => {
   return (
-    <section className="flex flex-col gap-2 py-20">
-      <h2 className="num-head text-highlight text-bold text-3xl flex items-center">
+    <section className="flex flex-col gap-2 2xl:mx-20">
+      <h2 className="num-head text-highlight text-bold text-2xl flex items-center">
         About me
       </h2>
-      <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center mt-12">
         <div className="flex flex-col gap-3 max-w-lg text-lg">
           {desc.map((eachDesc, i) => (
             <p key={i}>{eachDesc}</p>
           ))}
 
-          <ul className="grid grid-cols-2 gap-1 text-sm">
+          <ul className="grid grid-cols-2 gap-4 text-xs font-semibold w-4/6">
             {technologies.map((eachTech) => {
               return (
-                <li className="before:content-['▹'] before:m-2" key={eachTech}>
+                <li className="before:content-['▹'] before:mr-3" key={eachTech}>
                   {eachTech}
                 </li>
               );

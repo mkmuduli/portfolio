@@ -14,9 +14,13 @@
         content: "0"counter(nav-item)". ";
     }
 
+    .num-head-wrap{
+        counter-reset: section-head 0;
+    }
+
     .num-head::before{
-        counter-increment: section 1;
-        content: "0" counter(section) ".";
+        counter-increment: section-head 1;
+        content: "0" counter(section-head) ".";
         margin-right: 12px;
     }
     .num-head::after{
@@ -26,6 +30,12 @@
         flex: 1;
         max-width: 300px;
         background-color: var(--color-highlight);
+    }
+
+    .num-head-v2::before{
+        counter-increment: section-head 1;
+        content: "0" counter(section-head) ".";
+        margin-right: 12px;
     }
 
     .profile-container::after{
@@ -49,6 +59,12 @@
     .text-bold-2 {
         -webkit-text-stroke: 3px;
         font-size: 60px;
+        letter-spacing: 3px;
+        font-weight: 900;
+    }
+    .text-semibold-2 {
+        -webkit-text-stroke: 3px;
+        font-size: 40px;
         letter-spacing: 3px;
         font-weight: 900;
     }
