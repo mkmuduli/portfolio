@@ -6,11 +6,11 @@ const projects = [1, 2, 3];
 
 const Work = () => {
   return (
-    <section className="flex flex-col gap-2 mt-28">
-      <h2 className="num-head text-highlight text-bold text-2xl flex items-center">
+    <section className="flex flex-col gap-2 mt-40 ">
+      <h2 className="num-head-v2 text-highlight text-bold text-3xl text-center">
         Projects
       </h2>
-      <div className="flex flex-col min-[1150px]:flex-row gap-4 mt-10 flex-wrap items-center">
+      <div className="flex flex-col min-[1150px]:flex-row gap-4 mt-20 flex-wrap items-center">
         {projects.map((each) => {
           return (
             <div
